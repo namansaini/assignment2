@@ -20,6 +20,8 @@ const addTaskHandler = () =>
 
     newLiItem.setAttribute('draggable', 'true')
     newLiItem.setAttribute('ondragstart', 'drag(event)')
+    
+    //setting unique id of each list item
     newLiItem.id = `item${i++}`
 
     let newSpanItem = document.createElement('span')
@@ -37,7 +39,6 @@ const addTaskHandler = () =>
     newLiItem.appendChild(newDeleteButton)
 
     ul.appendChild(newLiItem)
-    
 }
 
 
