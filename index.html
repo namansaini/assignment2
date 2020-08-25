@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM API and DRAG & DROP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box-1">
+        <h2>To Do List</h2>
+        <ul>
+          <!-- <li id="item2" draggable="true" ondragstart="drag(event)" >
+            <span class="content">Buy Oranges</span>
+            <button class="delete_button">Delete Item</button>
+          </li>
+          <li>
+            <span class="content">Complete Assignemnt</span>
+            <button class="delete_button">Delete Item</button>
+          </li>
+          <li>
+            <span class="content">Replace laptop</span>
+            <button class="delete_button">Delete Item</button>
+          </li> -->
+        </ul>
+      </div>
+      <div class="box-2">
+        <h2>Alternate To Do List</h2>
+        <ul ondragover="allowDrop(event)" ondrop="drop(event)" ></ul>
+      </div>
+    </div>
+    <div class="action">
+      <input type="text" id="inputField" placeholder="Enter Task" />
+      <button onclick="addTaskHandler()" class="add_task">Add Task</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
